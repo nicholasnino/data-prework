@@ -1,0 +1,17 @@
+well_height = 125
+cmPerDay = 30
+cmPerNight = -20
+snailHasNotEscaped = True
+days = 0
+totalCMs = 0
+
+cmPerWholeDay = cmPerDay + cmPerNight
+
+while snailHasNotEscaped:
+   totalCMs += cmPerWholeDay
+   days += 1
+   print(days)
+   if totalCMs >= well_height:
+      snailHasNotEscaped = False
+
+print("Congratulations! the snail escaped in", days, "days")
